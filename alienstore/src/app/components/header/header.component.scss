@@ -1,0 +1,22 @@
+.toolbar-verde-lima {
+  --background: limegreen; /* Fondo verde lima */
+  --color: black; /* Texto en negro */
+}
+
+ion-toolbar{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+ion-menu-button{
+  color: black;
+}
+
+.titulos_repa {
+  text-align: center;
+  font-size: 15px;
+  white-space: normal;
+}

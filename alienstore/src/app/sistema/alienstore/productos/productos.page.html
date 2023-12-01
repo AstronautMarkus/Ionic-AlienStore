@@ -1,0 +1,27 @@
+<app-header titulo="🛸 Productos 🛸"></app-header>
+<app-menu></app-menu>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let juego of videojuegos">
+
+    <img alt="Silhouette of mountains" src="{{ juego.img }}" />
+
+    <ion-card-header>
+      <ion-card-title>{{ juego.titulo }}</ion-card-title>
+      <ion-card-subtitle>{{ juego.categoria }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+     Precio: <ion-card-subtitle>${{ juego.precio_usd }}</ion-card-subtitle>
+     Stock: <ion-card-subtitle>{{ juego.unidades_disponibles }}</ion-card-subtitle>
+     
+     <ion-button shape="round" (click)="irADetalles(juego.id)">Detalles</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  
+</ion-content>

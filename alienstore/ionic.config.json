@@ -1,0 +1,7 @@
+{
+  "name": "alienstore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

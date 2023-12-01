@@ -1,0 +1,27 @@
+<app-header titulo="{{ videojuego?.titulo }}"></app-header>
+<app-menu></app-menu>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngIf="videojuego">
+
+    <img alt="Silhouette of mountains" src="{{ videojuego.img }}" />
+
+    <ion-card-header>
+      <ion-card-title>{{ videojuego?.titulo }}</ion-card-title>
+      <ion-card-subtitle>{{ videojuego?.categoria }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+     Precio: <ion-card-subtitle>${{ videojuego?.precio_usd }}</ion-card-subtitle>
+     Stock: <ion-card-subtitle>{{ videojuego?.unidades_disponibles }}</ion-card-subtitle>
+     
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+  
+</ion-content>
